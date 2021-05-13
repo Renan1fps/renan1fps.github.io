@@ -1,132 +1,145 @@
+/*Reset*/
+
 * {
     padding: 0;
     margin: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     box-sizing: border-box;
-  }
-  
-  /* Variables */
-  :root {
-    --main-color: #54B689;
-    --main-text-color: #FFF;
+}
+
+/*variaveis*/
+
+:root {
+    --main-color: #54b689;
+    --main-text-color: #fff;
     --border-color: #999;
-    --bio-bg-color: #1E2A3A;
+    --bio-bg-color: #1E2a3a;
     --bio-border-color: #293544;
     --about-bg-color: #111821;
-  }
-  
-  /* General */
-  .highlight {
-    color: var(--main-color);
-  }
-  
-  /* Containers */
-  #container {
+}
+
+/*Geral*/
+
+.highlight {
+    color: var(--main-color)
+}
+
+/*Containers*/
+
+#container {
     display: flex;
     flex-direction: row;
     color: var(--main-text-color);
-  }
-  
-  #bio-container {
+}
+
+#bio-container {
     flex: 1 1 20%;
     min-height: 100vh;
     background-color: var(--bio-bg-color);
     text-align: center;
     padding: 30px 12px;
     border-right: 5px solid var(--bio-border-color);
-  }
-  
-  #about-container {
+}
+
+#about-container {
     flex: 1 1 80%;
     min-height: 100vh;
     background-color: var(--about-bg-color);
     padding: 50px;
-  }
-  
-  /* Bio container */
-  #bio-container h2 {
+}
+
+/*Bio container*/
+
+#bio-container h2 {
     margin-bottom: 25px;
-  }
-  
-  #bio-container p {
+}
+
+#bio-container p {
     margin-bottom: 20px;
-  }
-  
-  #bio-container #welcome-text {
+}
+
+#bio-container #welcome-text {
     font-weight: bold;
-  }
-  
-  #bio-image {
-    width: 175px;
-    height: 175px;
+}
+
+#bio-image {
+    width: 145px;
+    height: 155px;
     border-radius: 50%;
     margin-bottom: 25px;
-  }
-  
-  #social-container {
+    box-shadow: 2px 2px 10px rgb(0, 0, 0);
+    border: solid 2px rgb(170, 165, 165);
+}
+
+#social-container {
     display: flex;
     justify-content: center;
     list-style: none;
     border-bottom: 1px solid var(--border-color);
     margin-bottom: 25px;
     padding-bottom: 25px;
-  }
-  
-  #social-container li {
+}
+
+#social-container li {
     flex: 1 1 0;
     max-width: 60px;
-  }
-  #social-container li a:hover {
-    color: #fff;
 }
-  
-  #social-container li a {
+
+#social-container li a {
     color: var(--main-color);
     font-size: 30px;
-  }
-  
-  #email-container {
+}
+
+#social-container li a:hover {
+    color: #fff;
+}
+
+#email-container {
     display: flex;
     justify-content: center;
-  }
-  
-  #email-container ion-icon,
-  #email-container a {
+}
+
+#email-container ion-icon, #email-container a {
     flex: 1 1 0;
-  }
-  
-  #email-container a {
+}
+
+#email-container a {
     color: var(--main-text-color);
     text-decoration: none;
     max-width: 225px;
-  }
-  
-  #email-container ion-icon {
+}
+
+#email-container ion-icon {
     color: var(--main-color);
     font-size: 20px;
     margin-right: 5px;
     max-width: 20px;
-  }
-  
-  /* about container */
-  #name {
+}
+
+#email-container ion-icon:hover {
+    color: #fff;
+}
+
+/*About container*/
+
+#name {
     font-size: 42px;
     margin-bottom: 15px;
-  }
-  
-  #title {
+}
+
+#title {
     font-size: 24px;
     margin-bottom: 15px;
     font-weight: bold;
-  }
-  
-  .description {
+}
+
+.description {
     max-width: 75%;
     margin-bottom: 10px;
-  }
-  
-  #btn-projects {
-    font-weight: bold;
+}
+
+#btn-projects {
+    font-weight: bolder;
     font-size: 16px;
     color: var(--main-text-color);
     background-color: var(--main-color);
@@ -139,100 +152,115 @@
     width: 150px;
     text-align: center;
     display: flex;
-  }
-  
-  #btn-projects ion-icon,
-  #btn-projects span {
+}
+
+#btn-projects ion-icon, #btn-projects span {
     flex: 1 1 0;
-  }
-  
-  #btn-projects ion-icon {
+}
+
+#btn-projects ion-icon {
     font-size: 20px;
     max-width: 20px;
-  }
-  
-  #btn-projects:hover {
+}
+
+#btn-projects:hover {
     background-color: transparent;
-  }
-  
-  #skills-section-title {
+}
+
+#skills-section-title {
     border-top: 1px solid var(--border-color);
     padding-top: 20px;
     margin-bottom: 20px;
     font-size: 32px;
-  }
-  
-  #skills-container {
+}
+
+#skills-container {
     display: flex;
     flex-wrap: wrap;
     margin-top: 25px;
-  }
-  
-  .skills-box {
+}
+
+.skills-box {
     flex: 1 1 33%;
     max-width: 33%;
     margin-bottom: 35px;
-  }
-  
-  .skills-title {
-    font-size: 24px;
+    background-color: #293544;
+    border-radius: 15px;
+    margin: 3px 3px;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 5px black;
+    padding: 5px;
+}
+
+.skills-title {
+    font-size: 15px;
     margin-bottom: 25px;
     font-weight: bold;
     padding-left: 10px;
-    border-left: 5px solid var(--main-color);
-  }
-  
-  .skills-box i {
-    font-size: 45px;
-    margin-right: 10px;
-  }
-  
-  /* Mobile */
-  @media(max-width: 450px) {
-  
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.skills-box i {
+    font-size: 35px;
+    align-self: center;
+    margin-left: 15px;
+
+}
+
+/*Mobile*/
+
+@media(max-width: 653px) {
+    *{
+        align-content: center;
+    }
     #container {
-      flex-direction: column;
+        flex-direction: column;
     }
-  
-    #bio-container {
-      min-height: auto;
-      border-right: none;
-      border-bottom: 5px solid var(--bio-border-color);
+    #bio-container{
+        min-height: auto;
+        border-right: none;
+        border-bottom: 5px solid var(--bio-border-color);
     }
-  
-    #bio-container h2 {
-      display: none;
+    #bio-container h2{
+        display: none;
     }
-  
-    #bio-container p {
-      max-width: 60%;
-      margin: 10px auto;
+    #bio-container p{
+        max-width: 60%;
+        margin: 10px auto;
     }
-  
-    #about-container {
-      text-align: center;
-      padding: 30px;
+    #about-container{
+        text-align: center;
     }
-  
-    #about-container .description {
-      margin: 10px auto;
-      max-width: 100%;
-      line-height: 26px;
+    #about-container .description{
+        margin: 10px auto;
+        max-width: 100%;
+        line-height: 26px;
     }
-  
-    #btn-projects {
-      margin: 20px auto;
+    #btn-projects{
+        margin: 20px auto;
     }
-  
-    .skills-box {
-      flex: 1 1 100%;
-      max-width: 100%;
-      margin-bottom: 40px;
-      text-align: left;
+    #skills-box{
+        flex: 1 1 100%;
+        max-width: 100%;
+        margin-bottom: 40px;
+        text-align: left;
     }
-  
-    .skills-box i {
-      font-size: 60px;
+    .skills-box i{
+        font-size: 50px;
+        margin-left: 1px;
+    
+       
     }
-  
-  }
+    .skills-title{
+        font-size: 15px;
+        max-width: 100%;
+        overflow: hidden;
+        
+
+
+    }
+    #skills-container{
+        justify-content: center;
+    }
+}
